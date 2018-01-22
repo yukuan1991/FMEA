@@ -1,0 +1,145 @@
+ribbon_button {
+    min-width:65px;
+    max-width:65px;
+    min-height:21px;
+    max-height:21px;
+}
+
+ribbon_button {
+    color:white;
+    border: 1px solid #416ABD;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    /* background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0 #467FBD, stop:0.5 #2A5FAC,stop:0.51 #1A4088, stop:1 #419ACF); */
+	background: #205AA7; /*文件按钮背景色*/ 
+}
+
+ribbon_button::hover{
+    /*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0 #7BB2EB, stop:0.5 #477ECD,stop:0.51 #114ECF, stop:1 #80E1FF); */
+	background: #7388C1; /*当鼠标在上面悬浮时文件按钮背景色*/
+}
+
+
+ribbon_button::pressed{
+    /*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0 #467BBB, stop:0.5 #2F63AE,stop:0.51 #1C438A, stop:1 #358BC9); */
+	background: #2F63AE;
+}
+
+ribbon_button::menu-indicator{
+	image:None;
+}
+
+/*ribbon背景*/
+ribbon::pane{
+    border: 1px solid #BAC9DB;
+    /* background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFFFFF, stop: 0.5 #DCE6F4,
+                                stop: 0.95 #DCE6F4, stop: 1.0 #E5F0FB);  */
+	background: white;
+
+    top: -1px;
+    min-height:100px;
+    max-height:100px;
+}
+
+
+ribbon::tab-bar {
+    left: 67px;
+}
+ribbon_bar::tab{
+    min-width:65px;
+    max-width:65px;
+    min-height:22px;
+    max-height:22px;
+}
+/*tab标签页背景*/
+ribbon_bar::tab {
+    background: #D7D7D7;
+}
+
+ribbon_bar::tab:selected, ribbon_bar::tab:hover {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+ribbon_bar::tab-bar {
+    border: 1px solid #BAC9DB;
+}
+/*编辑、视频等tabbar被选择时*/
+ribbon_bar::tab:selected{
+    border: 1px solid #BAC9DB;
+    background: white;
+    border-bottom-color: white;
+}
+
+/*编辑、视频等tabbar有鼠标悬浮时*/
+ribbon_bar::tab:hover:!selected{
+    border: 1px solid #ECECEC;
+}
+
+/*ribbon_bar::tab:!selected {
+    margin-top: 1px;
+}
+*/
+
+
+
+
+ribbon_menu::item {
+    background-color: transparent;
+    color: black;
+}
+
+ribbon_menu::item:selected{
+    background-color: #FFF68F;
+    color: black;
+}
+
+ribbon_menu {
+    background-color: white;
+    border: 1px solid #8492A6;
+}
+
+ribbon_menu::item {
+    background-color: 94AAD6;
+}
+
+ribbon_menu_item::hover{
+	border: 1px solid #ECECEC;
+	/*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #FEF9F4, stop:0.38 #FDE0BD,stop:0.39 #FFCE69, stop:1 #FFFFE7);*/
+	background-color: #ECECEC;
+}
+
+ribbon_menu::item:selected { 
+    background-color: #FFF68F;
+}
+
+
+ribbon_tool {
+    background: transparent;
+    border: 0px;
+}
+/*编辑菜单下鼠标悬浮*/
+ribbon_tool::hover {
+    background: #ECECEC;
+    /* border: 1px solid #ECBC3D; */
+}
+ribbon_tool::pressed {
+	background: #F0ED7F;
+}
+
+ribbon_tool::checked {
+	background: #F0ED7F;
+}
+
+ribbon_edit {
+	border: 1px solid gray;
+	selection-background-color: darkgray;
+	background-color: #ECF6FF;
+}
+
+video_main{
+background: #D7D7D7;
+}
