@@ -17,8 +17,8 @@ fmea_ribbon::fmea_ribbon(QWidget *parent)
         vector<ui_group> edit;
         edit.resize (1);
         button_cell b;
-        b.add ("导入Vaf", QPixmap ("png/导入.png"), import);
-        b.set_title ("第一类");
+        b.add ("vaf file", QPixmap ("png/导入.png"), import);
+        b.set_title ("导入");
         edit.at (0) = ::move (b);
         add_tab (edit, "编辑");
     }
@@ -35,9 +35,9 @@ fmea_ribbon::fmea_ribbon(QWidget *parent)
         b.add ("FMEA编号", QPixmap ("png/040.png"), set_number);
         b.add ("FMEA日期", QPixmap ("png/041.png"), set_f_date);
         b.add ("编织者", QPixmap ("png/042.png"), set_auther);
-        b.set_title ("第一类");
+        b.set_title ("属性设置");
         edit.at (0) = ::move (b);
-        add_tab (edit, "修改");
+        add_tab (edit, "设置");
     }
     inti_con();
 }

@@ -1890,7 +1890,10 @@ release/main.o: main.cc fmea_main.h \
 		../../qt-build/qt/include/QtCore/QDebug \
 		../../qt-build/qt/include/QtWidgets/QStyleFactory \
 		../../qt-build/qt/include/QtWidgets/qstylefactory.h \
-		verification/verification.h
+		verification/verification.h \
+		../../qt-build/qt/include/QtCore/QTimer \
+		../../qt-build/qt/include/QtCore/qtimer.h \
+		../../qt-build/qt/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cc
 
 release/ribbon.o: ribbon.cc ribbon.h \
