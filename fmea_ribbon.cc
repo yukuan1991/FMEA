@@ -17,7 +17,7 @@ fmea_ribbon::fmea_ribbon(QWidget *parent)
         vector<ui_group> edit;
         edit.resize (1);
         button_cell b;
-        b.add ("导入", QPixmap ("png/导入.png"), import);
+        b.add ("导入Vaf", QPixmap ("png/导入.png"), import);
         b.set_title ("第一类");
         edit.at (0) = ::move (b);
         add_tab (edit, "编辑");

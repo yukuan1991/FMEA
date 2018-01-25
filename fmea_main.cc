@@ -164,6 +164,7 @@ void fmea_main::on_save()
             title_path == "未命名")
     {
         const auto path = QFileDialog::getSaveFileName(this, "文件保存", ".", tr ("Fmea File (*.fmea)"));
+        active->setWindowTitle(path);
         const auto data = w->export_data ();
         file::write_buffer (::utf_to_sys (path.toStdString ()).data (), data);
     }
@@ -189,6 +190,7 @@ void fmea_main::on_save_as()
         return;
     }
     const auto path = QFileDialog::getSaveFileName(this, "文件保存", ".", tr ("Fmea File (*.fmea)"));
+    active->setWindowTitle(path);
     const auto data = w->export_data ();
     file::write_buffer (::utf_to_sys (path.toStdString ()).data (), data);
 }
